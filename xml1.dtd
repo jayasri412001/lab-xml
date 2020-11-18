@@ -1,0 +1,37 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT jobList (comp1,comp2,comp3)>
+<!ATTLIST jobList
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comp1 (companyname,jobtitle,stipend,duration,location)>
+<!ATTLIST comp1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comp2 (companyname,jobtitle,stipend,duration,location)>
+<!ATTLIST comp2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comp3 (companyname,jobtitle,stipend,duration,location)>
+<!ATTLIST comp3
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT companyname (#PCDATA)>
+<!ATTLIST companyname
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT jobtitle (#PCDATA)>
+<!ATTLIST jobtitle
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT stipend (#PCDATA)>
+<!ATTLIST stipend
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT duration (#PCDATA)>
+<!ATTLIST duration
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT location (#PCDATA)>
+<!ATTLIST location
+  xmlns CDATA #FIXED ''>

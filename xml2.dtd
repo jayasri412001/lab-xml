@@ -1,0 +1,41 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT student (detail1,detail2,detail3)>
+<!ATTLIST student
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT detail1 (name,collage,year,location,DOB,address)>
+<!ATTLIST detail1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT detail2 (name,collage,year,location,DOB,address)>
+<!ATTLIST detail2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT detail3 (name,collage,year,location,DOB,address)>
+<!ATTLIST detail3
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT collage (#PCDATA)>
+<!ATTLIST collage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST year
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT location (#PCDATA)>
+<!ATTLIST location
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT DOB (#PCDATA)>
+<!ATTLIST DOB
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address
+  xmlns CDATA #FIXED ''>
