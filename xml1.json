@@ -1,0 +1,23 @@
+{
+   "comp1": {
+      "companyname": "TECHVOLT SOFTWARE is providing",
+      "jobtitle": "DEVELOPMENT INTERN internship with the stipend amount of",
+      "stipend": "30000 for",
+      "duration": "4 MONTHS at",
+      "location": "COIMBATORE"
+   },
+   "comp2": {
+      "companyname": "ZETA SUITE is providing",
+      "jobtitle": "SOFTWARE DEVELOPMENT INTERN internship with the stipend amount of",
+      "stipend": "40000 for",
+      "duration": "5 MONTHS  at",
+      "location": "MUMBAI"
+   },
+   "comp3": {
+      "companyname": "GE POWER is providing",
+      "jobtitle": "ENGINEERING INTERN internship with the stipend amount of",
+      "stipend": "50000 for",
+      "duration": "6 MONTHS at",
+      "location": "CHENNAI"
+   }
+}

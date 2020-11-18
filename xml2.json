@@ -1,0 +1,26 @@
+{
+   "detail1": {
+      "name": "G.SURYA",
+      "collage": "TCE",
+      "year": "2020",
+      "location": "TPC",
+      "DOB": "4.1.2001",
+      "address": "MAIN ROAD"
+   },
+   "detail2": {
+      "name": "R.VIJAY BALAJI",
+      "collage": "TCE",
+      "year": "2020",
+      "location": "MADURAI",
+      "DOB": "4.1.1998",
+      "address": "MAIN ROAD MADURAI"
+   },
+   "detail3": {
+      "name": "J.NIRMAL",
+      "collage": "TCE",
+      "year": "2020",
+      "location": "MADURAI",
+      "DOB": "4.1.2000",
+      "address": "MAIN ROAD MADURAI"
+   }
+}
