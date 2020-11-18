@@ -1,0 +1,44 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="detail1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="collage"/>
+              <xs:element type="xs:short" name="year"/>
+              <xs:element type="xs:string" name="location"/>
+              <xs:element type="xs:string" name="DOB"/>
+              <xs:element type="xs:string" name="address"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detail2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="collage"/>
+              <xs:element type="xs:short" name="year"/>
+              <xs:element type="xs:string" name="location"/>
+              <xs:element type="xs:string" name="DOB"/>
+              <xs:element type="xs:string" name="address"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detail3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="collage"/>
+              <xs:element type="xs:short" name="year"/>
+              <xs:element type="xs:string" name="location"/>
+              <xs:element type="xs:string" name="DOB"/>
+              <xs:element type="xs:string" name="address"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
