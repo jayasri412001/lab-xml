@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no" ?>
+<?xml-stylesheet type = "text/xsl" href = "xml2xslt.xsl"?>
+<?xml-stylesheet type="text/css" href="t.css"?> 
+<student>
+    <detail1>
+	
+        <name>G.SURYA</name>
+        <collage>TCE</collage>
+		<year>2020</year>
+		<location>TPC</location>
+		<DOB>4.1.2001</DOB>
+		<address>MAIN ROAD</address>
+		
+    </detail1>
+    <detail2>
+        <name>R.VIJAY BALAJI</name>
+        <collage>TCE</collage>
+		<year>2020</year>
+		<location>MADURAI</location>
+		<DOB>4.1.1998</DOB>
+		<address>MAIN ROAD MADURAI</address>
+    </detail2>
+    <detail3>
+        <name>J.NIRMAL</name>
+        <collage>TCE</collage>
+		<year>2020</year>
+		<location>MADURAI</location>
+		<DOB>4.1.2000</DOB>
+		<address>MAIN ROAD MADURAI</address>
+   </detail3>
+   
+</student>

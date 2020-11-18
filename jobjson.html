@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            font-size: 55px;
+            color: black;
+            font-family:Castellar ;
+            text-align: center;
+        }
+
+        h2 {
+            font-family:Cooper Black ;
+            color: black;
+            font-size: 45px;
+            padding-left: 90px;
+        }
+
+        ul {
+            font-family:Times New Roman;
+            font-size: 20px;
+            padding-left: 150px;
+			color:green;
+            list-style: none;
+        }
+
+        .container {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>List of companys</h1>
+    <h2>1st company</h2>
+    <ul id="comp1"></ul>
+    <div class="container">
+        <h2>2nd company</h2>
+        <ul id="comp2"></ul>
+    </div>
+	<div class="container2">
+        <h2>3nd company</h2>
+        <ul id="comp3"></ul>
+    </div>
+
+    <script>
+        var text = '{"comp1": ['+
+		'{ "@id":"1",        "companyname":"TECHVOLT SOFTWARE is providing",		"jobtitle":"DEVELOPMENT INTERN internship with the stipend amount of ",		"stipend":"30000 for",		"duration":"4 MONTHS at",		"location":"COIMBATORE"},'+
+		'{"@id":"1",	"companyname":"ZETA SUITE is providing","jobtitle":"SOFTWARE DEVELOPMENT INTERN internship with the stipend amount of",		"stipend":"40000 for" ,		"duration":"5 MONTHS  at",		"location":"MUMBAI"},'+
+		'{ " @id ": "1",	"companyname":"GE POWER is providing",		"jobtitle":"ENGINEERING INTERN internship with the stipend amount of",		"stipend":"50000 for",		"duration":" 6 MONTHS at",		"location":"CHENNAI"}]}';
+  
+        obj = JSON.parse(text);
+        document.getElementById("comp1").innerHTML = "<li>" +
+            obj.comp1[0].companyname + " - " + obj.comp1[0].jobtitle + "</li> <br><li>" +
+            obj.comp1[0].stipend + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.comp1[0].duration + " &nbsp;&nbsp;&nbsp;&nbsp; " +
+            obj.comp1[0].location + "</li>";
+        document.getElementById("comp2").innerHTML = "<li>" +
+           obj.comp1[1].companyname + " - " + obj.comp1[1].jobtitle + "</li> <br><li>" +
+            obj.comp1[1].stipend + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.comp1[1].duration + " &nbsp;&nbsp;&nbsp;&nbsp; " +
+            obj.comp1[1].location + "</li>";
+	    document.getElementById("comp3").innerHTML = "<li>" +
+           obj.comp1[2].companyname + " - " + obj.comp1[2].jobtitle + "</li> <br><li>" +
+            obj.comp1[2].stipend + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.comp1[2].duration + " &nbsp;&nbsp;&nbsp;&nbsp; " +
+            obj.comp1[2].location + "</li>";
+	    
+    </script>
+
+</body>
+
+</html>

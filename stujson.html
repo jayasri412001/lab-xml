@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            font-size: 55px;
+            color: black;
+            font-family:Castellar ;
+            text-align: center;
+        }
+
+        h2 {
+            font-family:Cooper Black ;
+            color: black;
+            font-size: 45px;
+            padding-left: 90px;
+        }
+
+        ul {
+            font-family:Times New Roman;
+            font-size: 20px;
+            padding-left: 150px;
+			color:green;
+            list-style: none;
+        }
+
+        .container {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>List of student</h1>
+    <h2>1st student</h2>
+    <ul id="stu1"></ul>
+    <div class="container">
+        <h2>2nd student</h2>
+        <ul id="stu2"></ul>
+    </div>
+	<div class="container2">
+        <h2>3nd student</h2>
+        <ul id="stu3"></ul>
+    </div>
+
+    <script>
+        var text = '{"detail1":['+
+  '{"@id":"1",	       "name":"G.SURYA",        "collage":"TCE",		"year":"2020",		"location":"TPC",		"DOB":"4.1.2001",		"address":"MAIN ROAD"},'+
+  '{"@id":"1",        "name":"R.VIJAY BALAJI",        "collage":"TCE","year":"2020",		"location":"MADURAI",		"DOB":"4.1.1998",		"address":"MAIN ROAD MADURAI"},'+
+  '{"@id":"1",        "name":"J.NIRMAL",        "collage":"TCE",		"year":"2020",		"location":"MADURAI",	"DOB":"4.1.2000",		"address":"MAIN ROAD MADURAI"}]}';
+  
+        obj = JSON.parse(text);
+        document.getElementById("stu1").innerHTML = "<li>" +
+            obj.detail1[0].name + " - " + obj.detail1[0].collage + "</li> <br><li>" +
+            obj.detail1[0].year + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.detail1[0].location + " &nbsp;&nbsp;&nbsp;&nbsp; " +
+            obj.detail1[0].DOB+ "</li>";
+        document.getElementById("stu2").innerHTML = "<li>" +
+            obj.detail1[1].name + " - " + obj.detail1[1].collage + "</li> <br><li>" +
+            obj.detail1[1].year + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.detail1[1].location + " &nbsp;&nbsp;&nbsp;&nbsp; " +
+            obj.detail1[1].DOB+ "</li>";
+		document.getElementById("stu3").innerHTML = "<li>" +
+            obj.detail1[2].name + " - " + obj.detail1[2].collage + "</li> <br><li>" +
+            obj.detail1[2].year + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.detail1[2].location + " &nbsp;&nbsp;&nbsp;&nbsp; " +
+            obj.detail1[2].DOB+ "</li>";
+	    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <style>
+        h1 {
+            font-size: 50px;
+            color: black;
+            font-family: Castellar;
+            text-align: center;
+        }
+
+        h2 {
+            font-family:Cooper Black ;
+            color: black;
+            font-size: 27px;
+            padding-left: 90px;
+        }
+
+        p,ul {
+            font-family:Impact ;
+            font-size: 20px;
+            padding-left: 150px;
+			 color: green;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1> company list</h1>
+    <div class="deatail">
+        <h2>Number of Company: </h2> <p id = "count"></p>
+    </div>
+    <h2>1st company</h2>
+    <ul>
+        <li id = "comp1"></li>
+        <li id = "location1"></li>
+    </ul>
+    <div class="container">
+        <h2>2nd company</h2>
+        <ul>
+            <li id = "comp2"></li>
+            <li id = "location2"></li>
+        </ul>
+    </div>
+	<div class="container2">
+        <h2>3nd company</h2>
+        <ul>
+            <li id = "comp3"></li>
+            <li id = "location3"></li>
+        </ul>
+    </div>
+      
+    <script>
+        var parser, xmlDoc;
+              var text = "<jobList >    <comp1 id='1'>        <companyname>TECHVOLT SOFTWARE is providing</companyname>		<jobtitle>DEVELOPMENT INTERN internship with the stipend amount of </jobtitle>		<stipend>30000 for</stipend> 		<duration>4 MONTHS at</duration>		<location>COIMBATORE</location>    </comp1>    <comp1 id='2'>	<companyname>ZETA SUITE is providing</companyname>		<jobtitle>SOFTWARE DEVELOPMENT INTERN internship with the stipend amount of</jobtitle>		<stipend>40000 for</stipend>		<duration>5 MONTHS  at</duration>			<location>MUMBAI</location>    </comp1>	 <comp1 id = '3'>	<companyname>GE POWER is providing</companyname>		<jobtitle>ENGINEERING INTERN internship with the stipend amount of</jobtitle> <stipend>50000 for</stipend> <duration> 6 MONTHS at</duration> 		<location>CHENNAI</location></comp1></jobList>";
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(text, "text/xml");
+        
+        document.getElementById("count").innerHTML =
+            xmlDoc.getElementsByTagName("jobList")[0].childElementCount;
+        
+        document.getElementById("location1").innerHTML =
+            xmlDoc.getElementsByTagName("location")[0].childNodes[0].nodeValue;
+        document.getElementById("comp1").innerHTML =
+            xmlDoc.getElementsByTagName("companyname")[0].childNodes[0].nodeValue;
+
+             document.getElementById("location2").innerHTML =
+            xmlDoc.getElementsByTagName("location")[1].childNodes[0].nodeValue;
+        document.getElementById("comp2").innerHTML =
+            xmlDoc.getElementsByTagName("companyname")[1].childNodes[0].nodeValue;
+			
+			document.getElementById("location3").innerHTML =
+            xmlDoc.getElementsByTagName("location")[2].childNodes[0].nodeValue;
+        document.getElementById("comp3").innerHTML =
+            xmlDoc.getElementsByTagName("companyname")[2].childNodes[0].nodeValue;
+			
+			 
+    </script>
+
+</body>
+
+</html>

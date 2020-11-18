@@ -1,0 +1,123 @@
+
+comp2{
+    padding-top: 60px;
+    padding-left: 10px;
+    position: relative;
+    display: block;
+}
+comp3{
+    padding-top: 60px;
+    padding-left: 10px;
+    position: relative;
+    display: block;
+}
+comp1 companyname{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: AR DELANEY;
+    font-size: 35px;
+}
+
+comp1 stipend,jobtitle,location,duration{
+    color:brown;
+   
+    
+    font-family:AR ESSENCE ;
+	font-size: 20px;
+    padding-left: 25px;
+}
+comp2 companyname{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: AR DELANEY;
+    font-size: 35px;
+}
+
+comp2 stipend,jobtitle,location,duration{
+    color:brown;
+   
+    
+    font-family:AR ESSENCE ;
+	font-size: 20px;
+    padding-left: 25px;
+}
+
+comp3 companyname{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: AR DELANEY;
+    font-size: 35px;
+}
+
+comp3 stipend,jobtitle,location,duration{
+    color:brown;
+   
+    
+    font-family:AR ESSENCE ;
+	font-size: 20px;
+    padding-left: 25px;
+}
+detail2{
+    padding-top: 60px;
+    padding-left: 10px;
+    position: relative;
+    display: block;
+}
+detail3{
+    padding-top: 60px;
+    padding-left: 10px;
+    position: relative;
+    display: block;
+}
+
+detail1 name{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: AR DELANEY;
+    font-size: 35px;
+}
+
+detail1 collage,year,location,DOB,address{
+    color:brown;
+   
+    
+    font-family: AR ESSENCE;
+	 font-size: 25px;
+    padding-left: 25px;
+}
+detail2 name{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: AR DELANEY;
+    font-size: 35px;
+}
+
+detail2 collage,year,location,DOB,address{
+    color:brown;
+   
+    
+    font-family: AR ESSENCE;
+	 font-size: 25px;
+    padding-left: 25px;
+}
+detail3 name{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: AR DELANEY;
+    font-size: 35px;
+}
+
+detail3 collage,year,location,DOB,address{
+    color:brown;
+   
+    
+    font-family: AR ESSENCE;
+	 font-size: 25px;
+    padding-left: 25px;
+}

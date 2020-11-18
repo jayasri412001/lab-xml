@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <style>
+        h1 {
+            font-size: 50px;
+            color: black;
+            font-family: Castellar;
+            text-align: center;
+        }
+
+        h2 {
+            font-family:Cooper Black ;
+            color: black;
+            font-size: 27px;
+            padding-left: 90px;
+        }
+
+        p,ul {
+            font-family:Impact ;
+            font-size: 20px;
+            padding-left: 150px;
+			 color: green;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1> student list</h1>
+    <div class="deatail">
+        <h2>Number of Student: </h2> <p id = "count"></p>
+    </div>
+    <h2>1st student</h2>
+    <ul>
+        <li id = "name1"></li>
+        <li id = "collage1"></li>
+    </ul>
+    <div class="container">
+        <h2>2nd student</h2>
+        <ul>
+            <li id = "name2"></li>
+            <li id = "collage2"></li>
+        </ul>
+    </div>
+	<div class="container2">
+        <h2>3nd student</h2>
+        <ul>
+            <li id = "name3"></li>
+            <li id = "collage3"></li>
+        </ul>
+    </div>     
+    <script>        
+	var parser, xmlDoc;		
+	var text ="<student>    <detail1 id='1'>        <name>G.SURYA</name>        <collage>TCE</collage>		<year>2020</year>		<location>TPC</location>		<DOB>4.1.2001</DOB>		<address>MAIN ROAD</address>    </detail1>    <detail1 id='2'>        <name>R.VIJAY BALAJI</name>        <collage>TCE</collage>		<year>2020</year>		<location>MADURAI</location>		<DOB>4.1.1998</DOB>		<address>MAIN ROAD MADURAI</address>    </detail1>    <detail1 id='3'>        <name>J.NIRMAL</name>        <collage>TCE</collage>		<year>2020</year>		<location>MADURAI</location>		<DOB>4.1.2000</DOB>		<address>MAIN ROAD MADURAI</address>   </detail1></student>";
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(text, "text/xml");
+        
+        document.getElementById("count").innerHTML =
+            xmlDoc.getElementsByTagName("student")[0].childElementCount;
+        
+        document.getElementById("collage1").innerHTML =
+            xmlDoc.getElementsByTagName("collage")[0].childNodes[0].nodeValue;
+        document.getElementById("name1").innerHTML =
+            xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+             document.getElementById("collage2").innerHTML =
+            xmlDoc.getElementsByTagName("collage")[1].childNodes[0].nodeValue;
+        document.getElementById("name2").innerHTML =
+            xmlDoc.getElementsByTagName("name")[1].childNodes[0].nodeValue;
+			
+			document.getElementById("collage3").innerHTML =
+            xmlDoc.getElementsByTagName("collage")[2].childNodes[0].nodeValue;
+        document.getElementById("name3").innerHTML =
+            xmlDoc.getElementsByTagName("name")[2].childNodes[0].nodeValue;
+			
+			 
+    </script>
+
+</body>
+
+</html>
